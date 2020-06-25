@@ -1,0 +1,102 @@
+﻿body {
+    background-color: #121212;
+    color:ghostwhite;
+}
+
+#header{
+    width: 100%;
+    height: 10%;
+    overflow: hidden;
+    background-color:#232323;
+
+}
+#header a:visited {
+    color: lightblue;
+}
+#Title {
+    position:relative;
+    margin:auto;
+    font-size:50px;
+    left:45%;
+    color:deepskyblue;
+    font-family:Hero;
+}
+#navigator {
+    background-color: #272727;
+    list-style-type: none;
+    overflow: hidden;
+    width: 100%;
+}
+#stick {
+    position:sticky;
+    top: 0px;
+}
+#register:hover {
+    background-color: transparent;
+}
+#register {
+    display: block;
+    color: transparent;
+    padding: 0px 0px;
+    text-align: start;
+    border: none;
+    width:65px;
+}
+td a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    border-right: solid 2px white;
+}
+
+td a:hover {
+    background-color:#222222;
+}
+
+
+#footer {
+    width: 100%;
+    height: 2%;
+    background-color: #232323;
+    right: 1px;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .tooltiptext {
+        visibility: hidden;
+        width: 120px;
+        background-color: black;
+        color: #fff;
+        text-align: center;
+        border-radius: 6px;
+        padding: 5px 0;
+        position: absolute;
+        z-index: 1;
+    }
+
+.tooltip:hover .tooltiptext {
+        visibility: visible;
+    }
+input[type=text], input[type=password], input[type=email] {
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid grey;
+    color: ghostwhite;
+}
+    input[type=text]:focus, input[type=password]:focus, input[type=email]:focus {
+        border:none;
+        border-bottom:1px solid blue;
+        
+    }
+    select {
+        background-color: #121212;
+        color: ghostwhite;
+        border-color: ghostwhite;
+        border-radius: 7px;
+    }

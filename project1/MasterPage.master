@@ -1,0 +1,63 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Ori's Web</title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link rel="stylesheet" href="StyleSheet.css" type="text/css" />
+</head>
+<body>
+    <div id="header">
+        <p id="Title">Gaming</p>
+        <div id="preLogin">
+            <a style="font-family:Castellar; text-decoration:none" href="LogIn.aspx" id="LogInLink">LogIn</a>
+            <a style="font-family:Castellar; text-decoration:none" href="Register.aspx" id="RegisterLink">Register</a>
+        </div>
+        <div id="loggedIn">
+           <span id="Session">welcome <%=Session["username"] %></span>
+        </div>
+    </div>
+    <div id="stick">
+        <table id="navigator">
+            <tr>
+                <td><a href="HomePage.aspx">HomePage</a></td>
+                <td><a href="About.aspx" >About</a></td>
+                <td><a href="Gallery.aspx" >Gallery</a></td>
+                <td><a href="Pageone.aspx" >Page One</a></td>
+                <td><a href="Pagetwo.aspx" >Page Two</a></td>
+                <td><a href="Pagethree.aspx" >Page Three</a></td>
+            </tr>
+        </table>
+    
+    </div>
+        
+    <div>
+        <table >
+            
+            <tr style="width:50%">
+                <td >
+                    <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </td>
+                <td style="width:50%">
+                     <asp:ContentPlaceHolder id="ContentPlaceHolder2" runat="server">
+                    </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+        </table>
+        
+    </div>
+    <div>
+
+    </div>
+    <footer id="footer">
+        <p>
+             כל הזכויות שמורות לאורי קנטוב. <a href="#top">back to start</a>
+        </p>
+    </footer>
+       
+</body>
+</html>
